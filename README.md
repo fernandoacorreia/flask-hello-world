@@ -13,6 +13,7 @@ $ docker run \
   -it \
   -v $(pwd):$(pwd) \
   -p 5000:5000 \
+  -e FLASK_ENV=development \
   -e FLASK_APP=$(pwd)/app/hello.py \
   flask-hello-world flask run --host=0.0.0.0
 ```
